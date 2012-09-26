@@ -74,15 +74,16 @@ function client_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'content_extra_weights_land_use_client';
   $strongarm->value = array(
+    'print' => '27',
     'title' => '-5',
-    'revision_information' => '16',
-    'author' => '17',
-    'options' => '18',
-    'comment_settings' => '19',
-    'menu' => '15',
-    'path' => '21',
-    'attachments' => '20',
-    'print' => '22',
+    'revision_information' => '21',
+    'author' => '22',
+    'options' => '23',
+    'comment_settings' => '24',
+    'menu' => '20',
+    'path' => '26',
+    'attachments' => '25',
+    'workflow' => '14',
   );
   $export['content_extra_weights_land_use_client'] = $strongarm;
 

@@ -66,7 +66,7 @@ function client_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Address',
-      'weight' => '7',
+      'weight' => '11',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -84,7 +84,7 @@ function client_content_default_fields() {
         'format' => 'inline',
       ),
       'teaser' => array(
-        'format' => 'plain',
+        'format' => 'hidden',
         'exclude' => 0,
       ),
       'full' => array(
@@ -146,7 +146,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
       'default_value' => NULL,
       'default_value_php' => NULL,
       'label' => 'Age',
-      'weight' => '4',
+      'weight' => '8',
       'description' => 'Age of the client.',
       'type' => 'computed',
       'module' => 'computed_field',
@@ -275,6 +275,72 @@ $node_field[0][\'value\'] = ((int) $age) ;
     ),
   );
 
+  // Exported field: field_client_applicationnumber
+  $fields['land_use_client-field_client_applicationnumber'] = array(
+    'field_name' => 'field_client_applicationnumber',
+    'type_name' => 'land_use_client',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_client_applicationnumber][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Application Number',
+      'weight' => '3',
+      'description' => 'Please enter application number on the KFN Land Use Authorization application form. ',
+      'type' => 'text_textfield',
+      'module' => 'text',
+    ),
+  );
+
   // Exported field: field_client_city
   $fields['land_use_client-field_client_city'] = array(
     'field_name' => 'field_client_city',
@@ -335,7 +401,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
       ),
       'default_value_php' => NULL,
       'label' => 'City',
-      'weight' => '8',
+      'weight' => '12',
       'description' => 'The city where the client lives.',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -462,7 +528,7 @@ United States',
       ),
       'default_value_php' => NULL,
       'label' => 'Country',
-      'weight' => '11',
+      'weight' => '16',
       'description' => 'The country of residence.',
       'type' => 'optionwidgets_select',
       'module' => 'optionwidgets',
@@ -537,7 +603,7 @@ United States',
       'year_range' => '-3:+3',
       'label_position' => 'above',
       'label' => 'Date of Death',
-      'weight' => '6',
+      'weight' => '10',
       'description' => 'The date of the death of a client, if known.',
       'type' => 'date_popup',
       'module' => 'date',
@@ -602,7 +668,7 @@ Yes',
       ),
       'default_value_php' => NULL,
       'label' => 'Deceased',
-      'weight' => '5',
+      'weight' => '9',
       'description' => 'Whether the client is deceased.',
       'type' => 'optionwidgets_onoff',
       'module' => 'optionwidgets',
@@ -673,7 +739,7 @@ Yes',
       'year_range' => '-100:+0',
       'label_position' => 'above',
       'label' => 'Date of Birth',
-      'weight' => '3',
+      'weight' => '6',
       'description' => 'The date of birth of the client.',
       'type' => 'date_popup',
       'module' => 'date',
@@ -691,7 +757,7 @@ Yes',
         'format' => 'inline',
       ),
       'teaser' => array(
-        'format' => 'default',
+        'format' => 'hidden',
         'exclude' => 0,
       ),
       'full' => array(
@@ -734,10 +800,76 @@ Yes',
       ),
       'default_value_php' => NULL,
       'label' => 'Email',
-      'weight' => '13',
+      'weight' => '18',
       'description' => 'The client\'s email address.',
       'type' => 'email_textfield',
       'module' => 'email',
+    ),
+  );
+
+  // Exported field: field_client_enrolnumber
+  $fields['land_use_client-field_client_enrolnumber'] = array(
+    'field_name' => 'field_client_enrolnumber',
+    'type_name' => 'land_use_client',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_client_enrolnumber][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Enrollment Number',
+      'weight' => '2',
+      'description' => 'A citizen\'s enrollment number.',
+      'type' => 'number',
+      'module' => 'number',
     ),
   );
 
@@ -752,7 +884,7 @@ Yes',
         'format' => 'inline',
       ),
       'teaser' => array(
-        'format' => 'plain',
+        'format' => 'hidden',
         'exclude' => 0,
       ),
       'full' => array(
@@ -786,7 +918,14 @@ Yes',
     'max_length' => '',
     'allowed_values' => 'Individual
 Corporation',
-    'allowed_values_php' => '',
+    'allowed_values_php' => 'global $user;
+if ($user->uid == "20")
+return array(
+"Individual" => "Individual");
+else
+return array(
+"Individual" => "Individual",
+"Corporation" => "Corporation");',
     'widget' => array(
       'default_value' => array(
         '0' => array(
@@ -854,16 +993,18 @@ Other First Nation
 Non-First Nation
 ',
     'allowed_values_php' => 'global $user;
-
-  if (in_array($user, array("20", "0", "6")))
+if ($user->uid == "1")
 return array(
-"Other First Nation" => "Other First Nation",
-"Non-First Nation" => "Non-First Nation");
+"Non-First Nation" => "Non-First Nation",
+"Non-KFN First Nation" => "Non-KFN First Nation",
+"Kluane First Nation" => "Kluane First Nation");
+elseif ($user->uid != "20")
+return array(
+"Non-First Nation" => "Non-First Nation",
+"Non-KFN First Nation" => "Non-KFN First Nation");
 else
 return array(
-"Kluane First Nation" => "Kluane First Nation",
-"Other First Nation" => "Other First Nation",
-"Non-First Nation" => "Non-First Nation");',
+"Kluane First Nation" => "Kluane First Nation");',
     'widget' => array(
       'default_value' => array(
         '0' => array(
@@ -938,7 +1079,7 @@ Corporate',
       ),
       'default_value_php' => NULL,
       'label' => 'Gender',
-      'weight' => '2',
+      'weight' => '5',
       'description' => 'The client\'s gender.',
       'type' => 'optionwidgets_buttons',
       'module' => 'optionwidgets',
@@ -956,7 +1097,7 @@ Corporate',
         'format' => 'above',
       ),
       'teaser' => array(
-        'format' => 'default',
+        'format' => 'hidden',
         'exclude' => 0,
       ),
       'full' => array(
@@ -1012,7 +1153,7 @@ Corporate',
     'referrer_order' => 'TITLE_ASC',
     'widget' => array(
       'label' => 'Land Use Authorizations',
-      'weight' => '14',
+      'weight' => '19',
       'description' => '',
       'type' => 'nodereferrer_list',
       'module' => 'nodereferrer',
@@ -1144,10 +1285,74 @@ Corporate',
       ),
       'default_value_php' => NULL,
       'label' => 'Phone Number',
-      'weight' => '12',
+      'weight' => '17',
       'description' => 'The client\'s phone number.',
       'type' => 'phone_textfield',
       'module' => 'phone',
+    ),
+  );
+
+  // Exported field: field_client_place_birth
+  $fields['land_use_client-field_client_place_birth'] = array(
+    'field_name' => 'field_client_place_birth',
+    'type_name' => 'land_use_client',
+    'display_settings' => array(
+      'weight' => '5',
+      'parent' => '',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => 'Canada',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Place of Birth',
+      'weight' => '7',
+      'description' => '',
+      'type' => 'optionwidgets_buttons',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -1211,7 +1416,7 @@ Corporate',
       ),
       'default_value_php' => NULL,
       'label' => 'Postal Code/Zip Code',
-      'weight' => '9',
+      'weight' => '13',
       'description' => 'The mailing postal code.',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1341,13 +1546,77 @@ Yukon',
       ),
       'default_value_php' => NULL,
       'autocomplete_match' => 'starts_with',
-      'autocomplete_case' => '1',
+      'autocomplete_case' => '0',
       'i18n_flddata' => 0,
       'label' => 'Province/Sate',
-      'weight' => '10',
-      'description' => '',
+      'weight' => '15',
+      'description' => 'The province or state where the Client lives.',
       'type' => 'autocomplete_widgets_allowvals',
       'module' => 'autocomplete_widgets',
+    ),
+  );
+
+  // Exported field: field_client_registeredyn
+  $fields['land_use_client-field_client_registeredyn'] = array(
+    'field_name' => 'field_client_registeredyn',
+    'type_name' => 'land_use_client',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => 'Yes
+No',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Registered Status',
+      'weight' => '4',
+      'description' => 'Whether a client is a registered citizen.',
+      'type' => 'optionwidgets_buttons',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -1356,6 +1625,7 @@ Yukon',
   t('Address');
   t('Affiliation');
   t('Age');
+  t('Application Number');
   t('City');
   t('Client Type');
   t('Corporate Name');
@@ -1364,14 +1634,17 @@ Yukon',
   t('Date of Death');
   t('Deceased');
   t('Email');
+  t('Enrollment Number');
   t('First Name');
   t('Gender');
   t('Land Use Authorizations');
   t('Last Name');
   t('Middle Name');
   t('Phone Number');
+  t('Place of Birth');
   t('Postal Code/Zip Code');
   t('Province/Sate');
+  t('Registered Status');
 
   return $fields;
 }

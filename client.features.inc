@@ -20,11 +20,11 @@ function client_node_info() {
       'module' => 'features',
       'description' => t('This is a list of all clients of this system.'),
       'has_title' => '1',
-      'title_label' => t('Applicaton Number'),
+      'title_label' => t('Name'),
       'has_body' => '0',
       'body_label' => '',
       'min_word_count' => '0',
-      'help' => t('Please enter application number on the KFN Land Use Authorization application form. '),
+      'help' => '',
     ),
   );
   return $items;
