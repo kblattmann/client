@@ -11,7 +11,7 @@ function client_content_default_fields() {
     'field_name' => 'field_client_address',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '7',
+      'weight' => '12',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -66,7 +66,7 @@ function client_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Address',
-      'weight' => '11',
+      'weight' => '12',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -78,7 +78,7 @@ function client_content_default_fields() {
     'field_name' => 'field_client_age',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '4',
+      'weight' => '9',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -146,7 +146,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
       'default_value' => NULL,
       'default_value_php' => NULL,
       'label' => 'Age',
-      'weight' => '8',
+      'weight' => '9',
       'description' => 'Age of the client.',
       'type' => 'computed',
       'module' => 'computed_field',
@@ -158,7 +158,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
     'field_name' => 'field_client_applicant_firstname',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '-3',
+      'weight' => '-2',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -209,7 +209,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
       ),
       'default_value_php' => NULL,
       'label' => 'First Name',
-      'weight' => '-3',
+      'weight' => '-2',
       'description' => 'Enter client\'s first name',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -221,7 +221,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
     'field_name' => 'field_client_applicant_last',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '-1',
+      'weight' => 0,
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -268,7 +268,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
       'rows' => 5,
       'size' => '60',
       'label' => 'Last Name',
-      'weight' => '-1',
+      'weight' => 0,
       'description' => 'Enter client\'s last name',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -280,9 +280,10 @@ $node_field[0][\'value\'] = ((int) $age) ;
     'field_name' => 'field_client_applicationnumber',
     'type_name' => 'land_use_client',
     'display_settings' => array(
+      'weight' => '4',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -334,10 +335,81 @@ $node_field[0][\'value\'] = ((int) $age) ;
       ),
       'default_value_php' => NULL,
       'label' => 'Application Number',
-      'weight' => '3',
+      'weight' => '4',
       'description' => 'Please enter application number on the KFN Land Use Authorization application form. ',
       'type' => 'text_textfield',
       'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_client_card
+  $fields['land_use_client-field_client_card'] = array(
+    'field_name' => 'field_client_card',
+    'type_name' => 'land_use_client',
+    'display_settings' => array(
+      'weight' => '28',
+      'parent' => '',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'filefield',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'filefield',
+    'active' => '1',
+    'list_field' => '0',
+    'list_default' => 1,
+    'description_field' => '0',
+    'widget' => array(
+      'file_extensions' => 'png gif jpg jpeg',
+      'file_path' => 'businesscards',
+      'progress_indicator' => 'bar',
+      'max_filesize_per_file' => '',
+      'max_filesize_per_node' => '',
+      'max_resolution' => '0',
+      'min_resolution' => '0',
+      'alt' => '',
+      'custom_alt' => 0,
+      'title' => '',
+      'custom_title' => 0,
+      'title_type' => 'textfield',
+      'default_image' => NULL,
+      'use_default_image' => 0,
+      'label' => 'Business Card',
+      'weight' => '28',
+      'description' => 'A business card of the client.',
+      'type' => 'imagefield_widget',
+      'module' => 'imagefield',
     ),
   );
 
@@ -346,7 +418,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
     'field_name' => 'field_client_city',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '8',
+      'weight' => '13',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -401,7 +473,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
       ),
       'default_value_php' => NULL,
       'label' => 'City',
-      'weight' => '12',
+      'weight' => '13',
       'description' => 'The city where the client lives.',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -413,7 +485,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
     'field_name' => 'field_client_corporate_name',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => 0,
+      'weight' => '1',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -460,7 +532,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
       ),
       'default_value_php' => NULL,
       'label' => 'Corporate Name',
-      'weight' => 0,
+      'weight' => '1',
       'description' => 'Enter corporate name, if the client is a corporate entity.',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -472,7 +544,7 @@ $node_field[0][\'value\'] = ((int) $age) ;
     'field_name' => 'field_client_country',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '11',
+      'weight' => '16',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -540,7 +612,7 @@ United States',
     'field_name' => 'field_client_dateofdeath',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '6',
+      'weight' => '11',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -603,7 +675,7 @@ United States',
       'year_range' => '-3:+3',
       'label_position' => 'above',
       'label' => 'Date of Death',
-      'weight' => '10',
+      'weight' => '11',
       'description' => 'The date of the death of a client, if known.',
       'type' => 'date_popup',
       'module' => 'date',
@@ -615,7 +687,7 @@ United States',
     'field_name' => 'field_client_deceased',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '5',
+      'weight' => '10',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -668,7 +740,7 @@ Yes',
       ),
       'default_value_php' => NULL,
       'label' => 'Deceased',
-      'weight' => '9',
+      'weight' => '10',
       'description' => 'Whether the client is deceased.',
       'type' => 'optionwidgets_onoff',
       'module' => 'optionwidgets',
@@ -680,7 +752,7 @@ Yes',
     'field_name' => 'field_client_dob',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '3',
+      'weight' => '7',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -739,7 +811,7 @@ Yes',
       'year_range' => '-100:+0',
       'label_position' => 'above',
       'label' => 'Date of Birth',
-      'weight' => '6',
+      'weight' => '7',
       'description' => 'The date of birth of the client.',
       'type' => 'date_popup',
       'module' => 'date',
@@ -751,7 +823,7 @@ Yes',
     'field_name' => 'field_client_email',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '13',
+      'weight' => '18',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -812,9 +884,10 @@ Yes',
     'field_name' => 'field_client_enrolnumber',
     'type_name' => 'land_use_client',
     'display_settings' => array(
+      'weight' => '3',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -866,7 +939,7 @@ Yes',
       ),
       'default_value_php' => NULL,
       'label' => 'Enrollment Number',
-      'weight' => '2',
+      'weight' => '3',
       'description' => 'A citizen\'s enrollment number.',
       'type' => 'number',
       'module' => 'number',
@@ -878,7 +951,7 @@ Yes',
     'field_name' => 'field_client_entity',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '-4',
+      'weight' => '-3',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -934,7 +1007,7 @@ return array(
       ),
       'default_value_php' => NULL,
       'label' => 'Client Type',
-      'weight' => '-4',
+      'weight' => '-3',
       'description' => '',
       'type' => 'optionwidgets_select',
       'module' => 'optionwidgets',
@@ -946,7 +1019,7 @@ return array(
     'field_name' => 'field_client_fn',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '1',
+      'weight' => '2',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -988,7 +1061,7 @@ return array(
     'active' => '1',
     'text_processing' => '0',
     'max_length' => '',
-    'allowed_values' => 'Kluane First Nation
+    'allowed_values' => 'Ta\'an Kwachan Council
 Other First Nation
 Non-First Nation
 ',
@@ -997,14 +1070,14 @@ if ($user->uid == "1")
 return array(
 "Non-First Nation" => "Non-First Nation",
 "Non-KFN First Nation" => "Non-KFN First Nation",
-"Kluane First Nation" => "Kluane First Nation");
+"Ta\'an Kwachan Council" => "Ta\'an Kwachan Council");
 elseif ($user->uid != "20")
 return array(
 "Non-First Nation" => "Non-First Nation",
 "Non-KFN First Nation" => "Non-KFN First Nation");
 else
 return array(
-"Kluane First Nation" => "Kluane First Nation");',
+"Ta\'an Kwachan Council" => "Ta\'an Kwachan Council");',
     'widget' => array(
       'default_value' => array(
         '0' => array(
@@ -1013,7 +1086,7 @@ return array(
       ),
       'default_value_php' => NULL,
       'label' => 'Affiliation',
-      'weight' => '1',
+      'weight' => '2',
       'description' => 'The affiliation of the client.',
       'type' => 'optionwidgets_select',
       'module' => 'optionwidgets',
@@ -1025,7 +1098,7 @@ return array(
     'field_name' => 'field_client_gener',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '2',
+      'weight' => '6',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -1079,7 +1152,7 @@ Corporate',
       ),
       'default_value_php' => NULL,
       'label' => 'Gender',
-      'weight' => '5',
+      'weight' => '6',
       'description' => 'The client\'s gender.',
       'type' => 'optionwidgets_buttons',
       'module' => 'optionwidgets',
@@ -1091,7 +1164,7 @@ Corporate',
     'field_name' => 'field_client_lua',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '14',
+      'weight' => '19',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -1165,7 +1238,7 @@ Corporate',
     'field_name' => 'field_client_middlename',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '-2',
+      'weight' => '-1',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -1220,7 +1293,7 @@ Corporate',
       ),
       'default_value_php' => NULL,
       'label' => 'Middle Name',
-      'weight' => '-2',
+      'weight' => '-1',
       'description' => 'The middle name of the client, if applicable.',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1232,7 +1305,7 @@ Corporate',
     'field_name' => 'field_client_phone',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '12',
+      'weight' => '17',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -1272,9 +1345,9 @@ Corporate',
     'multiple' => '1',
     'module' => 'phone',
     'active' => '1',
-    'phone_country_code' => 0,
+    'phone_country_code' => 1,
     'ca_phone_separator' => '-',
-    'ca_phone_parentheses' => 0,
+    'ca_phone_parentheses' => 1,
     'widget' => array(
       'size' => '60',
       'default_value' => array(
@@ -1297,7 +1370,7 @@ Corporate',
     'field_name' => 'field_client_place_birth',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '5',
+      'weight' => '8',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -1349,7 +1422,7 @@ Corporate',
       ),
       'default_value_php' => NULL,
       'label' => 'Place of Birth',
-      'weight' => '7',
+      'weight' => '8',
       'description' => '',
       'type' => 'optionwidgets_buttons',
       'module' => 'optionwidgets',
@@ -1361,7 +1434,7 @@ Corporate',
     'field_name' => 'field_client_postal',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '9',
+      'weight' => '14',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -1416,7 +1489,7 @@ Corporate',
       ),
       'default_value_php' => NULL,
       'label' => 'Postal Code/Zip Code',
-      'weight' => '13',
+      'weight' => '14',
       'description' => 'The mailing postal code.',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1428,7 +1501,7 @@ Corporate',
     'field_name' => 'field_client_province',
     'type_name' => 'land_use_client',
     'display_settings' => array(
-      'weight' => '10',
+      'weight' => '15',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -1561,9 +1634,10 @@ Yukon',
     'field_name' => 'field_client_registeredyn',
     'type_name' => 'land_use_client',
     'display_settings' => array(
+      'weight' => '5',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -1613,8 +1687,75 @@ No',
       ),
       'default_value_php' => NULL,
       'label' => 'Registered Status',
-      'weight' => '4',
+      'weight' => '5',
       'description' => 'Whether a client is a registered citizen.',
+      'type' => 'optionwidgets_buttons',
+      'module' => 'optionwidgets',
+    ),
+  );
+
+  // Exported field: field_client_type
+  $fields['land_use_client-field_client_type'] = array(
+    'field_name' => 'field_client_type',
+    'type_name' => 'land_use_client',
+    'display_settings' => array(
+      'weight' => '-4',
+      'parent' => '',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '1',
+    'multiple' => '1',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => 'Land tenure
+Citizen
+Corporate
+Traditional Land Use',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => NULL,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Client Type',
+      'weight' => '-4',
+      'description' => 'The type of contact this person is.',
       'type' => 'optionwidgets_buttons',
       'module' => 'optionwidgets',
     ),
@@ -1626,6 +1767,7 @@ No',
   t('Affiliation');
   t('Age');
   t('Application Number');
+  t('Business Card');
   t('City');
   t('Client Type');
   t('Corporate Name');
